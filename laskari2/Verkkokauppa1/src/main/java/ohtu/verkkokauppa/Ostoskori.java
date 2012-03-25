@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class Ostoskori {
 
-    ArrayList<Tuote> tuotteet;
+    private ArrayList<Tuote> tuotteet;
 
     public Ostoskori() {
         tuotteet = new ArrayList<Tuote>();
@@ -20,11 +20,9 @@ public class Ostoskori {
 
     public int hinta() {
         int hinta = 0;
-
         for (Tuote tuote : tuotteet) {
             hinta += tuote.getHinta();
         }
-
         return hinta;
     }
 }
