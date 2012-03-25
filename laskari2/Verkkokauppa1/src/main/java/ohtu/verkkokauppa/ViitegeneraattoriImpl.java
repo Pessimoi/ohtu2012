@@ -4,10 +4,13 @@
  */
 package ohtu.verkkokauppa;
 
+import org.springframework.stereotype.Component;
+
 /**
  *
  * @author Pessi
  */
+@Component
 public class ViitegeneraattoriImpl implements Viitegeneraattori {
 
     private int seuraava;
